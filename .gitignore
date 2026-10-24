@@ -1,0 +1,5 @@
+﻿selftest.txt
+autoclean.txt
+purge.txt
+*.pdb
+.vs/
