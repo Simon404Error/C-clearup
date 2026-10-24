@@ -2,7 +2,7 @@
 
 **一个 35KB 单文件绿色版 Windows C 盘清理工具（中文界面），双击即用，无需安装、无需运行库。**
 
-> 项目名：C clearup ｜ 程序名：C盘清理工具.exe
+> 项目名：C clearup ｜ 程序：C-clearup.exe
 只清理**可再生的缓存、临时文件与日志**，绝不碰系统关键目录。
 
 ![界面截图](docs/screenshot.png)
@@ -25,7 +25,7 @@
 
 ## 使用方法（C clearup）
 
-1. 双击 `C盘清理工具.exe`，UAC 弹窗点「是」
+1. 双击 `C-clearup.exe`，UAC 弹窗点「是」
 2. 等待自动扫描完成（各项显示实际占用）
 3. 按需勾选，默认已选好的安全项可直接用
 4. 点「开始清理」→ 确认 → 完成后弹窗显示释放量
@@ -33,7 +33,7 @@
 ## 自检 / 只读模式
 
 ```
-C盘清理工具.exe -selftest
+C-clearup.exe -selftest
 ```
 
 生成 `selftest.txt`，列出各项目当前占用，**不做任何删除**。
@@ -46,7 +46,7 @@ C盘清理工具.exe -selftest
 $csc = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
 & $csc /nologo /codepage:65001 /target:winexe /platform:anycpu /optimize+ `
       /win32icon:src\app.ico /win32manifest:src\app.manifest `
-      /out:C盘清理工具.exe /r:System.dll /r:System.Windows.Forms.dll /r:System.Drawing.dll `
+      /out:C-clearup.exe /r:System.dll /r:System.Windows.Forms.dll /r:System.Drawing.dll `
       src\CleanC.cs
 ```
 
